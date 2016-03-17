@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>gephi-plugin-parent</artifactId>
+        <groupId>org.gephi</groupId>
+        <version>0.9.1</version>
+    </parent>
+
+    <groupId>gulab</groupId>
+    <artifactId>gu-import</artifactId>
+    <version>1.0.0</version>
+    <packaging>nbm</packaging>
+
+    <name>Gulab Import</name>
+
+    <dependencies>
+        <!-- Insert dependencies here -->
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>io-importer-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>utils-longtask</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-filesystems</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <licenseName>Apache 2.0</licenseName>
+                    <author>Declan</author>
+                    <authorEmail>chenye94@qq.com</authorEmail>
+                    <authorUrl></authorUrl>
+                    <sourceCodeUrl>http://github.com/Declan94/gephi-plugins</sourceCodeUrl>
+                    <publicPackages>
+                        <!-- Insert public packages -->
+                    </publicPackages>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+
